@@ -1,2 +1,5 @@
 #Ignore all DS_Stores
-*DS_Stores
+*.DS_Stores
+
+#Ignore all zips
+*.zip
