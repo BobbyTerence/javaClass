@@ -3,3 +3,6 @@
 
 #Ignore all zips
 *.zip
+
+#Ignore all compiled files
+*.class
