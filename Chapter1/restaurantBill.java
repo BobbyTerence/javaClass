@@ -1,6 +1,7 @@
 // Assignment done in class to calculate a Restaurant Bill with Tip and Tax
 package Chapter1;
 
+//Import classes
 import java.util.Scanner;
 
 public class restaurantBill

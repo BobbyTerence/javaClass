@@ -6,6 +6,8 @@ The amount paid for the stock alone(without the commission)
 The amount of the commission
 The total amount paid(for the stock plus the commission) */
 
+package Chapter1;
+
 import java.util.Scanner;
 
 public class stockPurchase

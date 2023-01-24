@@ -4,8 +4,10 @@
 • 2.75 cups of flour
 The recipe produces 48 cookies with these amounts of the ingredients. Write a program that asks the user how many cookies he or she wants to make, 
 and then displays the number of cups of each ingredient needed for the specified number of cookies. */
+
 package Chapter1;
 
+//Import classes
 import java.util.Scanner;
 
 public class ingredientAdjuster 
