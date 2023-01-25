@@ -33,6 +33,8 @@ public class ingredientAdjuster
         System.out.print("How many cookies would you like to make: ");
         cookies = input.nextInt();
 
+        input.close();
+
         //Calculate the ratio for the recipe
         ratio = cookies/COOKIES;
 

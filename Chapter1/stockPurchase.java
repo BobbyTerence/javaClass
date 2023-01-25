@@ -32,6 +32,8 @@ public class stockPurchase
         System.out.print("Number of Stocks you wish to purchase: ");
         shares = userInput.nextInt();
 
+        userInput.close();
+
         //Calculate the costs
         //Without commission
         paid = shares * STOCK_COST;

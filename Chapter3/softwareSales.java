@@ -10,8 +10,6 @@ of the discount (if any) and the total amount of the purchase after the discount
 
 import java.util.Scanner;
 
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
-
 public class softwareSales
 {
     public static void main(String[] args)
@@ -28,6 +26,8 @@ public class softwareSales
         //User input
         System.out.print("Enter the number of packages purchased: ");
         packages = userInput.nextInt();
+
+        userInput.close();
 
         //Descision making state to determine the discount percentage
         if(packages >= 100)
@@ -50,6 +50,5 @@ public class softwareSales
         //display
         System.out.printf("Discount: $%,.2f\n", discount);
         System.out.printf("Total amount: $%,.2f\n", total);
-
     }
 }

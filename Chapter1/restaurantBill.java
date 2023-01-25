@@ -24,6 +24,8 @@ public class restaurantBill
         System.out.print("Enter the meal charge: ");
         mealCharge = input.nextDouble();
 
+        input.close();
+
         //Calculate
         taxAmt = mealCharge * TAX_RATE;
         tipAmt =( mealCharge + taxAmt) * TIP_PERCENT;

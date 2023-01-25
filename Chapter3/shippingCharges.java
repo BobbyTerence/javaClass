@@ -8,7 +8,6 @@ The shipping charges per 500 miles are not prorated. For example, if a 2-pound p
 Write a program that asks the user to enter the weight of a package and then displays the shipping charges. */
 
 //Import classes
-import javax.lang.model.util.ElementScanner6;
 import javax.swing.JOptionPane;
 
 public class shippingCharges 
