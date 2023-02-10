@@ -18,6 +18,7 @@ public class hotelOccupancy {
         final int MIN_FLOOR = 1, MIN_ROOM = 10;
 
         int floors, rooms, roomsOccupied, roomsVacant, roomsTotal = 0, roomsOccupiedTotal = 0;
+        double occupancyRate;
 
         //Create Scanner object
         Scanner userInput = new Scanner(System.in);
@@ -68,10 +69,13 @@ public class hotelOccupancy {
         //Close the scanner object
         userInput.close();
 
-        //Calculate Vacant rooms and display
+        //Calculate Vacant rooms and Occupancy Rate, and display
         roomsVacant = roomsTotal - roomsOccupiedTotal;
+        occupancyRate = roomsOccupiedTotal + roomsTotal;
+
         System.out.println("Number of Rooms: " + roomsTotal);
         System.out.println("Occupied Rooms: " + roomsOccupiedTotal);
         System.out.println("Vacant Rooms: " + roomsVacant);
+        System.out.printf("Occupancy Rate: %,.2f%%\n", occupancyRate);
     }   
 }

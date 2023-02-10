@@ -8,23 +8,21 @@ import javax.swing.JOptionPane;
 public class numberSum {
     public static void main(String[] args) {
         //Declare constants and variables
-        int factorial = 0, given;
+        int summation = 0, given;
         String input;
 
         //Prompt user for input
-        input = JOptionPane.showInputDialog("This application give the factorial of the given number.\nPlease enter a Number:");
+        input = JOptionPane.showInputDialog("This application gives the summation of the given number.\nPlease enter a Number:");
         given = Integer.parseInt(input);
 
-        //Calculate the Factorial
+        //Calculate the Summation
         for(int i = 1; i <= given; i++)
         {
-            factorial += i;
-
-            System.out.println(factorial);
+            summation += i;
         }
 
         //Display the answer
-        JOptionPane.showMessageDialog(null, given + "! is " + factorial);
+        JOptionPane.showMessageDialog(null, "Summation of " + given + " is " + summation);
 
         //Close the application
         System.exit(0);
