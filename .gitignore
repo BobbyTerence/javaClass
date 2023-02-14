@@ -6,3 +6,8 @@
 
 #Ignore all compiled files
 *.class
+
+#Ignore txt files
+*.txt
+#Sample.txt is needed in order for convertoUpper.java to function
+!sample.txt
