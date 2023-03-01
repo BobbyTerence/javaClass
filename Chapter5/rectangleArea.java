@@ -1,6 +1,4 @@
-/* This is a program done in class after going overe methods */
-
-package Chapter5;
+/* This is a program done in class after going over methods */
 
 import java.util.Scanner;
 
@@ -9,10 +7,16 @@ public class rectangleArea {
         //Create variables
         double length, width, area;
 
-        //Call Methods to assign values;
-        length = getLength();
+        //Create Scanner object
+        Scanner userInput = new Scanner(System.in);
 
-        width = getWidth();
+        //Call Methods to assign length and width values;
+        length = getLength(userInput);
+
+        width = getWidth(userInput);
+
+        //Close Scanner object
+        userInput.close();
 
         //Call Method to calculate and assign area
         area = getArea(length, width);
@@ -24,17 +28,14 @@ public class rectangleArea {
     /** The getLength method prompts user for length of the rectangle
      * @return the length of the rectangle
      */
-    public static double getLength() {
-        //Create Scanner object
-        Scanner userInput = new Scanner(System.in);
-
+    public static double getLength(Scanner userInput) {
         //Create a variable
         double length;
 
         System.out.print("Enter rectangles length: ");
         length = userInput.nextDouble();
 
-        userInput.close();
+        //userInput.close();
 
         return length;
     }
@@ -42,17 +43,14 @@ public class rectangleArea {
     /** The getWidth method prompts the usere for the width of the rectangl
      * @return the width of the rectangle
      */
-    public static double getWidth() {
-        //Create Scanner object
-        Scanner userInput = new Scanner(System.in);
-
+    public static double getWidth(Scanner userInput) {
         //Create a variable
         double width;
 
         System.out.print("Enter rectangles width: ");
         width = userInput.nextDouble();
 
-        userInput.close();
+        //userInput.close();
 
         return width;
     }
@@ -78,6 +76,6 @@ public class rectangleArea {
      * @param area calculated area of the rectangle
      */
     public static void display(double length, double width, double area) {
-        System.out.printf("The Area of a Rectangle with length %.2f and width %.2f has an area of %.2f", length, width, area);
+        System.out.printf("The Area of a Rectangle with length %.2f and width %.2f has an area of %.2f\n", length, width, area);
     }
 }
